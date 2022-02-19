@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Sign up form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="wrapper">
     <aside class="aside">
@@ -16,33 +21,58 @@
       </div>
     </aside>
     <main class="main">
-      <p class="main__description"></p>
+      <div class="main__description">
+        <p class="main__description-text">
+          This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
+        </p>
+        <p class="main__description-ending">
+          You know you want to.
+        </p>
+      </div>
+      
       <form class="main__form">
-        <fieldset>
-          <label class="main__form-input" for="first_name">FIRST NAME</label>
-          <input class="main__form-input" type="text" id="first_name" name="first_name">
+        <fieldset class="main__form-container">
+          <h2 class="main__form-title">Let's do this!</h2>
 
-          <label class="main__form-input" for="last_name">LAST NAME</label>
-          <input class="main__form-input" type="text" id="last_name" name="last_name">
-
-          <label class="main__form-input" for="email">EMAIL</label>
-          <input class="main__form-input" type="text" id="email" name="email">
-
-          <label class="main__form-input" for="phone">PHONE NUMBER</label>
-          <input class="main__form-input" type="tel" id="phone" name="phone">
-
-          <label class="main__form-input" for="password">PASSWORD</label>
-          <input class="main__form-input" type="password" id="password" name="password">
-
-          <label class="main__form-input" for="confirm_password">CONFIRM PASSWORD</label>
-          <input class="main__form-input" type="password" id="confirm_password" name="confirm_password">
+          <div class="main__form-inputs">
+            <div class="main__form-input-container">
+              <label class="main__form-label" for="first_name">FIRST NAME</label>
+              <input class="main__form-input" type="text" id="first_name" name="first_name" required>
+            </div>
+  
+            <div class="main__form-input-container">
+              <label class="main__form-label" for="last_name">LAST NAME</label>
+              <input class="main__form-input" type="text" id="last_name" name="last_name" required>
+            </div>
+  
+            <div class="main__form-input-container">
+              <label class="main__form-label" for="email">EMAIL</label>
+              <input class="main__form-input" type="email" id="email" name="email" required>
+            </div>
+  
+            <div class="main__form-input-container">
+              <label class="main__form-label" for="phone">PHONE NUMBER</label>
+              <input class="main__form-input" type="tel" id="phone" name="phone" required>
+            </div>
+  
+            <div class="main__form-input-container">
+              <label class="main__form-label" for="password">PASSWORD</label>
+              <input class="main__form-input" type="password" id="password" name="password" required>
+            </div>
+  
+            <div class="main__form-input-container">
+              <label class="main__form-label" for="confirm_password">CONFIRM PASSWORD</label>
+              <input class="main__form-input" type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+          </div>
         </fieldset>
         <button class="main__form-btn">Create Account</button>
         <p class="main__form-text">Already have an account? <a href="#" class="main__form-link">Log in</a></p>
       </form>
     </main>
   </div>
-  
+
   <script src="script.js"></script>
 </body>
+
 </html>
